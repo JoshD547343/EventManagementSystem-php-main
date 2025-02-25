@@ -1,0 +1,12 @@
+CREATE DATABASE eventmanagementsystem;
+
+USE eventmanagementsystem;
+
+CREATE TABLE IF NOT EXISTS events (
+        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(100) NOT NULL,
+        description VARCHAR(100) NOT NULL,
+        event_status ENUM('Pending', 'Preparing', 'Completed') DEFAULT 'Pending'
+        );
+
+
